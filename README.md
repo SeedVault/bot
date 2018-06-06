@@ -136,7 +136,12 @@ Check a more [complete example](docs/bot_example.json) to see the structure of t
 - [.BOT description JSON schema](docs/bot_schema.json)
 - [.BOT file example](docs/bot_example.json)
 
+## Connect
+Feel free to throw general questions regarding SEED and what to expect in the following months here on GitHub (or GitLab) at  @consiliera (gaby@seedtoken.io) :sunny: 
 
+**Connect with us elsewhere** 
+- [Follow us on Twitter](https://twitter.com/SEED_token)
+- Always here the latest news first on [Telegram](https://t.me/seedtoken) and [Discord](https://discord.gg/Suv5bFT)
 
 Seed Vault Code (c) Botanic Technologies, Inc. Used under license.
 
