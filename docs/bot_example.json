@@ -1,0 +1,117 @@
+{
+  "bot": {
+    "ID": "05f079c46d096717604cc815f8eb5886",
+    "name": "Example bot",
+    "description": "This is an example",
+    "version": "1.0",
+    "repository": "www.example.com",
+    "creationDate": "018-05-23T04:27:53Z",
+    "updateDate": "20180523T042753Z",
+    "language": "EN",
+
+    "license": {
+      "type": "Apache License",
+      "version": "1.0",
+      "url": "url"
+    },
+    "remuneration": {
+      "method": "paid",
+      "tokens": 0.0001
+    },
+    "tags": [
+      "example","weather"
+    ],
+
+    "author": {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "country": "Canada",
+      "url": "https://www.example.com",
+      "seedAddress": "17mmd6HfhkFB2kLy2GBbWenn48YJf7mGwg"
+    },
+
+    "modes": {
+      "chat": true,
+      "voice": true,
+      "avatar": false,
+      "realTime": false,
+      "vr": false
+    },
+
+    "channels": {
+      "channel": {
+        "name": "web",
+        "enabled": true,
+        "mode": "voice"
+      }
+    },
+
+    "media": {
+      "thumbnail": "https://www.example.com/thumb/avatar/32/",
+      "avatar": {
+        "library": "https://www.example.com/library/avatar/32/ACTR/",
+        "prefix": "avatar_"
+      }
+    },
+
+    "runtime": {
+      "server": "https://127.0.0.1",
+      "type": "seed",
+      "IP": "127.0.0.1",
+      "port": 8888,
+      "encoding": "utf8",
+      "seedAddress": "17mmd6HfhkFB2kLy2GBbWenn48YJf7mGwg"
+    },
+
+    "textToSpeech": {
+      "provider": "string",
+      "server": {
+        "url": "https://www.example.com/api/v32",
+        "apiKey": "string",
+        "password": "string",
+        "token": "string",
+        "configurationParameters": "array"
+      },
+      "voice": "string",
+      "pitch": "string",
+      "language": "string",
+      "effect": "string",
+      "level": "string"
+    },
+
+    "voiceRecognition": {
+      "provider": "string",
+      "server": {
+        "url": "https://www.example.com/api/v32",
+        "apiKey": "string",
+        "password": "string",
+        "token": "string",
+        "language": "string",
+        "configurationParameters": "array"
+      }
+    },
+
+    "sentimentAnalysis": {
+      "provider": "string",
+      "server": {
+        "url": "https://www.example.com/api/v32",
+        "apiKey": "string",
+        "password": "string",
+        "token": "string",
+        "language": "string",
+        "configurationParameters": "array"
+      }
+    },
+    "logging": {
+      "enabled": true,
+      "method": "encoded",
+      "server": "https://logs.example.com"
+    },
+
+    "conversationFlow": {
+      "url": https://flows.example.com/flows/flowID/32"
+    }
+
+  }
+
+}

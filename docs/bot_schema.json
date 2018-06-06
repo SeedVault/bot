@@ -1,0 +1,852 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "bot": {
+      "$id": "/properties/bot",
+      "type": "object",
+      "properties": {
+        "ID": {
+          "$id": "/properties/bot/properties/ID",
+          "type": "string",
+          "title": "Unique bot ID",
+          "default": "",
+          "examples": [
+            "05f079c46d096717604cc815f8eb5886","d141091782bab5eb3108699752602a52"
+          ]
+        },
+        "name": {
+          "$id": "/properties/bot/properties/name",
+          "type": "string",
+          "title": "Bot human redeable name",
+          "default": "SEED bot",
+          "examples": [
+            "Bot","Avatar","Botbot"
+          ]
+        },
+        "description": {
+          "$id": "/properties/bot/properties/description",
+          "type": "string",
+          "title": "Description about bot content",
+          "default": "",
+          "examples": [
+            "History teller bot","Health care bot"
+          ]
+        },
+        "version": {
+          "$id": "/properties/bot/properties/version",
+          "type": "string",
+          "title": "Bot definition version",
+          "default": "",
+          "examples": [
+            "1.0","1.2b"
+          ]
+        },
+        "repository": {
+          "$id": "/properties/bot/properties/repository",
+          "type": "url",
+          "title": "URL of the bot repository",
+          "default": "",
+          "examples": [
+            "https://example.com/repository/bot2/v32/"
+          ]
+        },
+        "creationDate": {
+          "$id": "/properties/bot/properties/creationDate",
+          "type": "datetime",
+          "title": "Bot creation datetime",
+          "default": "",
+          "examples": [
+            "2018-05-23T04:27:53Z"
+          ]
+        },
+        "updateDate": {
+          "$id": "/properties/bot/properties/updateDate",
+          "type": "datetime",
+          "title": "Bot last update datetime",
+          "default": "",
+          "examples": [
+            "20180523T042753Z"
+          ]
+        },
+        "language": {
+          "$id": "/properties/bot/properties/language",
+          "type": "string",
+          "title": "ISO 639-1 Language codes",
+          "default": "",
+          "examples": [
+            "EN","ES","ZH"
+          ]
+        },
+        "license": {
+          "$id": "/properties/bot/properties/license",
+          "type": "object",
+          "properties": {
+            "type": {
+              "$id": "/properties/bot/properties/license/properties/type",
+              "type": "string",
+              "title": "Bot usage license type",
+              "default": "",
+              "examples": [
+                "Apache License","CreativeCommons", "MIT Open Source"
+              ]
+            },
+            "version": {
+              "$id": "/properties/bot/properties/license/properties/version",
+              "type": "string",
+              "title": "License version",
+              "default": "",
+              "examples": [
+                "2.0","1.0 BY-NC"
+              ]
+            },
+            "url": {
+              "$id": "/properties/bot/properties/license/properties/url",
+              "type": "string",
+              "title": "url of license",
+              "default": "",
+              "examples": [
+                "https://www.example.com/license/v12/"
+              ]
+            }
+          }
+        },
+        "remuneration": {
+          "$id": "/properties/bot/properties/remuneration",
+          "type": "object",
+          "properties": {
+            "method": {
+              "$id": "/properties/bot/properties/remuneration/properties/method",
+              "type": "string",
+              "title": "Remuneration method",
+              "default": "",
+              "examples": [
+                "free","subscription","volley","custom"
+              ]
+            },
+            "tokens": {
+              "$id": "/properties/bot/properties/remuneration/properties/tokens",
+              "type": "float",
+              "title": "Number of token to be paid on each iteration",
+              "default": 0.00000001,
+              "examples": [
+                "float"
+              ]
+            },
+            "subscriptionDuration": {
+              "$id": "/properties/bot/properties/remuneration/properties/subscriptionDuration",
+              "type": "string",
+              "title": "In case of subscription remuneration mode, this property will have the kind of subscription",
+              "default": "",
+              "examples": [
+                "monthly","daily","biweekly","weekly"
+              ]
+            }
+          }
+        },
+        "tags": {
+          "$id": "/properties/bot/properties/tags",
+          "type": "array"
+        },
+        "author": {
+          "$id": "/properties/bot/properties/author",
+          "type": "object",
+          "properties": {
+            "name": {
+              "$id": "/properties/bot/properties/author/properties/name",
+              "type": "string",
+              "title": "Author's Name",
+              "default": "anonymous",
+              "examples": [
+                "John Doe","Jane Roe"
+              ]
+            },
+            "email": {
+              "$id": "/properties/bot/properties/author/properties/email",
+              "type": "email",
+              "title": "Author's email address",
+              "default": "test@example.com",
+              "examples": [
+                "john@example.com"
+              ]
+            },
+            "address": {
+              "$id": "/properties/bot/properties/author/properties/address",
+              "type": "string",
+              "title": "Author's address",
+              "default": "",
+              "examples": [
+                "221B Baker St"
+              ]
+            },
+            "city": {
+              "$id": "/properties/bot/properties/author/properties/city",
+              "type": "string",
+              "title": "Author's city",
+              "default": "",
+              "examples": [
+                "London","Buenos Aires","Sao Paulo"
+              ]
+            },
+            "state": {
+              "$id": "/properties/bot/properties/author/properties/state",
+              "type": "string",
+              "title": "Author's state",
+              "default": "",
+              "examples": [
+                "California","New York"
+              ]
+            },
+            "province": {
+              "$id": "/properties/bot/properties/author/properties/province",
+              "type": "string",
+              "title": "Author's province",
+              "default": "",
+              "examples": [
+                "Ontario","Cordoba"
+              ]
+            },
+            "country": {
+              "$id": "/properties/bot/properties/author/properties/country",
+              "type": "string",
+              "title": "Author's country",
+              "default": "",
+              "examples": [
+                "USA","UK","Canada","Germany"
+              ]
+            },
+            "postalCode": {
+              "$id": "/properties/bot/properties/author/properties/postalCode",
+              "type": "string",
+              "title": "Author's postal code",
+              "default": "",
+              "examples": [
+                "90210","EH7 5AA"
+              ]
+            },
+            "url": {
+              "$id": "/properties/bot/properties/author/properties/url",
+              "type": "URL",
+              "title": "Author's website",
+              "default": "",
+              "examples": [
+                "https://www.example.com"
+              ]
+            },
+            "seedAddress": {
+              "$id": "/properties/bot/properties/author/properties/seedAddress",
+              "type": "string",
+              "title": "Author's wallet address",
+              "default": "",
+              "examples": [
+                "17mmd6HfhkFB2kLy2GBbWenn48YJf7mGwg"
+              ]
+            }
+          }
+        },
+        "modes": {
+          "$id": "/properties/bot/properties/modes",
+          "type": "object",
+          "properties": {
+            "chat": {
+              "$id": "/properties/bot/properties/modes/properties/chat",
+              "type": "boolean",
+              "title": "Enable/Disable chat mode",
+              "default": true,
+              "examples": [
+                true, false
+              ]
+            },
+            "voice": {
+              "$id": "/properties/bot/properties/modes/properties/voice",
+              "type": "string",
+              "title": "Enable/Disable voice chat mode",
+              "default": false,
+              "examples": [
+                true, false
+              ]
+            },
+            "avatar": {
+              "$id": "/properties/bot/properties/modes/properties/avatar",
+              "type": "string",
+              "title": "Enable/Disable avatar display mode",
+              "default": false,
+              "examples": [
+                true, false
+              ]
+            },
+            "realTime": {
+              "$id": "/properties/bot/properties/modes/properties/realTime",
+              "type": "string",
+              "title": "Enable/Disable realtime video mode",
+              "default": false,
+              "examples": [
+                true, false
+              ]
+            },
+            "vr": {
+              "$id": "/properties/bot/properties/modes/properties/vr",
+              "type": "string",
+              "title": "Enable/Disable Virtual Reality mode",
+              "default": false,
+              "examples": [
+                true, false
+              ]
+            }
+          }
+        },
+        "channels": {
+          "$id": "/properties/bot/properties/channels",
+          "type": "object",
+          "properties": {
+            "channel": {
+              "$id": "/properties/bot/properties/channels/properties/channel",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "$id": "/properties/bot/properties/channels/properties/channel/properties/name",
+                  "type": "string",
+                  "title": "The name of the channel to enable connections",
+                  "default": "",
+                  "examples": [
+                    "facebookMessenger","Slack","Skype","Telegram","Signal"
+                  ]
+                },
+                "enabled": {
+                  "$id": "/properties/bot/properties/channels/properties/channel/properties/enabled",
+                  "type": "boolean",
+                  "title": "Boolean to determine if channel is enabled or not",
+                  "default": true,
+                  "examples": [
+                    true, false
+                  ]
+                },
+                "mode": {
+                  "$id": "/properties/bot/properties/channels/properties/channel/properties/mode",
+                  "type": "string",
+                  "title": "Mode used on the channel -it also depends on mode section settings-",
+                  "default": "",
+                  "examples": [
+                    "chat","voice","avatar"
+                  ]
+                },
+                "server": {
+                  "$id": "/properties/bot/properties/channels/properties/channel/properties/server",
+                  "type": "object",
+                  "properties": {
+                    "apiKey": {
+                      "$id": "/properties/bot/properties/channels/properties/channel/properties/server/properties/apiKey",
+                      "type": "URL",
+                      "title": "URL to server",
+                      "default": "",
+                      "examples": [
+                        "https://botserver.example.com/api/"
+                      ]
+                    },
+                    "password": {
+                      "$id": "/properties/bot/properties/channels/properties/channel/properties/server/properties/password",
+                      "type": "string",
+                      "title": "Password to connect to channel",
+                      "default": "",
+                      "examples": [
+                        "ZP26","123456","Joshua"
+                      ]
+                    },
+                    "token": {
+                      "$id": "/properties/bot/properties/channels/properties/channel/properties/server/properties/token",
+                      "type": "string",
+                      "title": "Token used to connect to channel",
+                      "default": "",
+                      "examples": [
+                        "13AFF12316589867DE"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "media": {
+          "$id": "/properties/bot/properties/media",
+          "type": "object",
+          "properties": {
+            "thumbnail": {
+              "$id": "/properties/bot/properties/media/properties/thumbnail",
+              "type": "URL",
+              "title": "URL to bot thumbnail",
+              "default": "",
+              "examples": [
+                "https://www.example.com/bot/thumb.png"
+              ]
+            },
+            "avatar": {
+              "$id": "/properties/bot/properties/media/properties/avatar",
+              "type": "object",
+              "properties": {
+                "library": {
+                  "$id": "/properties/bot/properties/media/properties/avatar/properties/library",
+                  "type": "URL",
+                  "title": "URL to avatar files to create a 3D avatar using ACTR standard",
+                  "default": "",
+                  "examples": [
+                    "https://www.example.com/library/avatar32/"
+                  ]
+                },
+                "prefix": {
+                  "$id": "/properties/bot/properties/media/properties/avatar/properties/prefix",
+                  "type": "string",
+                  "title": "Prefix used on avatar library",
+                  "default": "",
+                  "examples": [
+                    "woodman_","charly_"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "runtime": {
+          "$id": "/properties/bot/properties/runtime",
+          "type": "object",
+          "properties": {
+            "server": {
+              "$id": "/properties/bot/properties/runtime/properties/server",
+              "type": "URL",
+              "title": "Server URL or IP address",
+              "default": "",
+              "examples": [
+                "https://botserver.example.com:8888","https://localhost","https://127.0.0.1"
+              ]
+            },
+            "type": {
+              "$id": "/properties/bot/properties/runtime/properties/type",
+              "type": "string",
+              "title": "Type of server",
+              "default": "seed",
+              "examples": [
+                "seed"
+              ]
+            },
+            "IP": {
+              "$id": "/properties/bot/properties/runtime/properties/IP",
+              "type": "IP address",
+              "title": "IP address of server",
+              "default": "",
+              "examples": [
+                "127.0.0.1"
+              ]
+            },
+            "port": {
+              "$id": "/properties/bot/properties/runtime/properties/port",
+              "type": "integer",
+              "title": "Port used by the bot",
+              "default": 80,
+              "examples": [
+                80, 8080, 8888
+              ]
+            },
+            "encoding": {
+              "$id": "/properties/bot/properties/runtime/properties/encoding",
+              "type": "string",
+              "title": "Enconding used for texting",
+              "default": "UTF8",
+              "examples": [
+                "UTF8","latin1"
+              ]
+            },
+            "seedAddress": {
+              "$id": "/properties/bot/properties/runtime/properties/seedAddress",
+              "type": "wallet",
+              "title": "SEED server wallet -for service fees-",
+              "default": "",
+              "examples": [
+                "17mmd6HfhkFB2kLy2GBbWenn48YJf7mGwg"
+              ]
+            }
+          }
+        },
+
+        "modules": {
+          "$id": "/properties/bot/properties/modules",
+          "type": "object",
+          "properties": {
+            "name": {
+              "$id": "/properties/bot/properties/modules/properties/name",
+              "type": "string",
+              "title": "Module name",
+              "default": "",
+              "examples": [
+                "Authorization","randomizer","recorder"
+              ]
+            },
+            "configurationParameters": {
+              "$id": "/properties/bot/properties/modules/properties/configurationParameters",
+              "type": "array",
+              "title": "Parameters necessaries to use each different module",
+              "default": "",
+              "examples": [
+                "array"
+              ]
+            }
+          }
+        },
+
+        "textToSpeech": {
+          "$id": "/properties/bot/properties/textToSpeech",
+          "type": "object",
+          "properties": {
+            "provider": {
+              "$id": "/properties/bot/properties/textToSpeech/properties/provider",
+              "type": "string",
+              "title": "Text to speech provider name",
+              "default": "",
+              "examples": [
+                "ivona","naturalReader"
+              ]
+            },
+            "server": {
+              "$id": "/properties/bot/properties/textToSpeech/properties/server",
+              "type": "object",
+              "properties": {
+                "url": {
+                  "$id": "/properties/bot/properties/textToSpeech/properties/server/properties/url",
+                  "type": "string",
+                  "title": "URL of text to speech provider",
+                  "default": "",
+                  "examples": [
+                    "https://text2speech.example.com/api/vX"
+                  ]
+                },
+                "apiKey": {
+                  "$id": "/properties/bot/properties/textToSpeech/properties/server/properties/apiKey",
+                  "type": "string",
+                  "title": "API key to connect with text to speech service",
+                  "default": "",
+                  "examples": [
+                    "c21f969b5f03d33d43e04f8f136e7682"
+                  ]
+                },
+                "password": {
+                  "$id": "/properties/bot/properties/textToSpeech/properties/server/properties/password",
+                  "type": "string",
+                  "title": "Password to connect with text to speech service",
+                  "default": "",
+                  "examples": [
+                    "ZP26","123456","Joshua"
+                  ]
+                },
+                "token": {
+                  "$id": "/properties/bot/properties/textToSpeech/properties/server/properties/token",
+                  "type": "string",
+                  "title": "Token to connect with text to speech service",
+                  "default": "",
+                  "examples": [
+                    "28f3e46009e411ce2e908b0b9e3679f4"
+                  ]
+                },
+                "configurationParameters": {
+                  "$id": "/properties/bot/properties/textToSpeech/properties/server/properties/configurationParameters",
+                  "type": "array",
+                  "title": "Array configuration to connect with the text to speech service",
+                  "default": "",
+                  "examples": [
+                    "array"
+                  ]
+                }
+              }
+            },
+
+            "voice": {
+              "$id": "/properties/bot/properties/textToSpeech/properties/voice",
+              "type": "string",
+              "title": "Selected voice",
+              "default": "",
+              "examples": [
+                "Robert","David","Alejandra"
+              ]
+            },
+            "pitch": {
+              "$id": "/properties/bot/properties/textToSpeech/properties/pitch",
+              "type": "string",
+              "title": "Pitch effect to apply to the voice",
+              "default": "normal",
+              "examples": [
+                "normal","high","lower"
+              ]
+            },
+            "language": {
+              "$id": "/properties/bot/properties/textToSpeech/properties/language",
+              "type": "string",
+              "title": "language used for voice",
+              "default": "",
+              "examples": [
+                "English","Spanish","Chinese","German"
+              ]
+            },
+            "effect": {
+              "$id": "/properties/bot/properties/textToSpeech/properties/effect",
+              "type": "string",
+              "title": "Special effect to apply on voice",
+              "default": "",
+              "examples": [
+                "reverb","whister"
+              ]
+            },
+            "level": {
+              "$id": "/properties/bot/properties/textToSpeech/properties/level",
+              "type": "string",
+              "title": "Level to use on the effect",
+              "default": "normal",
+              "examples": [
+                "normal","high","lower"
+              ]
+            }
+          }
+        },
+        "voiceRecognition": {
+          "$id": "/properties/bot/properties/voiceRecognition",
+          "type": "object",
+          "properties": {
+            "provider": {
+              "$id": "/properties/bot/properties/voiceRecognition/properties/provider",
+              "type": "string",
+              "title": "Voice recognition provider name",
+              "default": "",
+              "examples": [
+                "nuance","mmodal"
+              ]
+            },
+            "server": {
+              "$id": "/properties/bot/properties/voiceRecognition/properties/server",
+              "type": "object",
+              "properties": {
+                "url": {
+                  "$id": "/properties/bot/properties/voiceRecognition/properties/server/properties/url",
+                  "type": "URL",
+                  "title": "URL for voice recognition",
+                  "default": "",
+                  "examples": [
+                    "https://www.example.com/api/"
+                  ]
+                },
+                "apiKey": {
+                  "$id": "/properties/bot/properties/voiceRecognition/properties/server/properties/apiKey",
+                  "type": "string",
+                  "title": "API key to connect with voice recognition service",
+                  "default": "",
+                  "examples": [
+                    "c21f969b5f03d33d43e04f8f136e7682"
+                  ]
+                },
+                "password": {
+                  "$id": "/properties/bot/properties/voiceRecognition/properties/server/properties/password",
+                  "type": "string",
+                  "title": "Passworkd to connect with voice recognition service",
+                  "default": "",
+                  "examples": [
+                    "ZP26","123456","Joshua"
+                  ]
+                },
+                "token": {
+                  "$id": "/properties/bot/properties/voiceRecognition/properties/server/properties/token",
+                  "type": "string",
+                  "title": "Token to connect with voice recognition service",
+                  "default": "",
+                  "examples": [
+                    "28f3e46009e411ce2e908b0b9e3679f4"
+                  ]
+                },
+                "language": {
+                  "$id": "/properties/bot/properties/voiceRecognition/properties/server/properties/language",
+                  "type": "string",
+                  "title": "Default language to do the voice recognition",
+                  "default": "english",
+                  "examples": [
+                    "english","spanish","chinese","french"
+                  ]
+                },
+                "configurationParameters": {
+                  "$id": "/properties/bot/properties/voiceRecognition/properties/server/properties/configurationParameters",
+                  "type": "array",
+                  "title": "Array with extra configuration parameters to be sent to voice recognition server",
+                  "default": "",
+                  "examples": [
+                    "array"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "sentimentAnalysis": {
+          "$id": "/properties/bot/properties/sentimentAnalysis",
+          "type": "object",
+          "properties": {
+            "provider": {
+              "$id": "/properties/bot/properties/sentimentAnalysis/properties/provider",
+              "type": "string",
+              "title": "Sentiment Analysis provider",
+              "default": "",
+              "examples": [
+                "microsoft","amazon"
+              ]
+            },
+            "server": {
+              "$id": "/properties/bot/properties/sentimentAnalysis/properties/server",
+              "type": "object",
+              "properties": {
+                "url": {
+                  "$id": "/properties/bot/properties/sentimentAnalysis/properties/server/properties/url",
+                  "type": "URL",
+                  "title": "Server url",
+                  "default": "",
+                  "examples": [
+                    "https://www.example.com/api/v32/"
+                  ]
+                },
+                "apiKey": {
+                  "$id": "/properties/bot/properties/sentimentAnalysis/properties/server/properties/apiKey",
+                  "type": "string",
+                  "title": "API key to connect with service",
+                  "default": "",
+                  "examples": [
+                    "2ceac90233d40570fde26315d8bde0d6"
+                  ]
+                },
+                "password": {
+                  "$id": "/properties/bot/properties/sentimentAnalysis/properties/server/properties/password",
+                  "type": "string",
+                  "title": "Password to connect with service",
+                  "default": "",
+                  "examples": [
+                    "ZP26","123456","Joshua"
+                  ]
+                },
+                "token": {
+                  "$id": "/properties/bot/properties/sentimentAnalysis/properties/server/properties/token",
+                  "type": "string",
+                  "title": "Token to connect with service",
+                  "default": "",
+                  "examples": [
+                    "28f3e46009e411ce2e908b0b9e3679f4"
+                  ]
+                },
+                "language": {
+                  "$id": "/properties/bot/properties/sentimentAnalysis/properties/server/properties/language",
+                  "type": "string",
+                  "title": "Default language sent to be analiyzed",
+                  "default": "english",
+                  "examples": [
+                    "english","spanish","chinese","portuguese"
+                  ]
+                },
+                "configurationParameters": {
+                  "$id": "/properties/bot/properties/sentimentAnalysis/properties/server/properties/configurationParameters",
+                  "type": "array",
+                  "title": "Extra parameters to be sent to setiment analysis provider",
+                  "default": "",
+                  "examples": [
+                    "array"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "services": {
+          "$id": "/properties/bot/properties/services",
+          "type": "object",
+          "properties": {
+            "provider": {
+              "$id": "/properties/bot/properties/services/properties/provider",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "$id": "/properties/bot/properties/services/properties/provider/properties/name",
+                  "type": "string",
+                  "title": "Name of the external service included on the bot",
+                  "default": "",
+                  "examples": [
+                    "weather","coinbase","yelp","googleMaps"
+                  ]
+                },
+                "status": {
+                  "$id": "/properties/bot/properties/services/properties/provider/properties/status",
+                  "type": "string",
+                  "title": "Status of the service",
+                  "default": "enabled",
+                  "examples": [
+                    "enabled","disabled"
+                  ]
+                },
+                "url": {
+                  "$id": "/properties/bot/properties/services/properties/provider/properties/url",
+                  "type": "URL",
+                  "title": "API url of the third party service",
+                  "default": "",
+                  "examples": [
+                    "https://www.example.com/api/v32"
+                  ]
+                },
+                "configurationParameters": {
+                  "$id": "/properties/bot/properties/services/properties/provider/properties/configurationParameters",
+                  "type": "array",
+                  "title": "Extra configuration to use the service",
+                  "default": "",
+                  "examples": [
+                    "array"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "logging": {
+          "$id": "/properties/bot/properties/logging",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "$id": "/properties/bot/properties/logging/properties/enabled",
+              "type": "boolean",
+              "title": "Indicates if chat logging is enabled or not",
+              "default": "",
+              "examples": [
+                true, false
+              ]
+            },
+            "method": {
+              "$id": "/properties/bot/properties/logging/properties/method",
+              "type": "string",
+              "title": "Method to log the conversations",
+              "default": "",
+              "examples": [
+                "database","plain","encoded"
+              ]
+            },
+            "server": {
+              "$id": "/properties/bot/properties/logging/properties/server",
+              "type": "URL",
+              "title": "Log server URL or IP address",
+              "default": "127.0.0.1",
+              "examples": [
+                "127.0.0.1","https://localhost","https://logs.example.com"
+              ]
+            }
+          }
+        },
+        "conversationFlow": {
+          "$id": "/properties/bot/properties/conversationFlow",
+          "type": "object"
+          "title": "URL or content of the conversation FLOW used by the bot",
+          "default": "",
+          "examples": [
+            "https://flows.example.com/flows/flowID/32"
+          ]
+        }
+      }
+    }
+  }
+}
