@@ -53,9 +53,9 @@ The description file is divided into sections to group the parameters:
 
 - **Channels**: Defines the configuration of each channel where users can use the bot.
 
-- **Media**: Here is listed all the files used to deploy the bot. In includes the thumbnail and all the files necesaries to create a 3D avatar following the ACTR standard.
+- **Media**: Here is listed all the files used to deploy the bot. It includes the thumbnail and all the files necessary to create a 3D avatar following the ACTR standard.
 
-- **Runtine**: This section is filled by the server that is running the bot. Includes information about port, server, etc. 
+- **Runtime**: This section is filled by the server that is running the bot. Includes information about port, server, etc. 
 
 - **Modules**: Defines the internal modules used on the bot.
 
