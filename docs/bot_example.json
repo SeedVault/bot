@@ -109,7 +109,7 @@
     },
 
     "conversationFlow": {
-      "url": https://flows.example.com/flows/flowID/32"
+      "url": "https://flows.example.com/flows/flowID/32"
     }
 
   }
