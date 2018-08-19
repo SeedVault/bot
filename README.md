@@ -1,4 +1,4 @@
-# .BOT Description
+# .BOT Description (version 1.1)
 
 The .BOT description is a human-readable open-source model for building a range of conversational AI.
 
@@ -16,7 +16,7 @@ Examples of channels (**bold**: already available):
 - **Web** (all modalities)
 - **Telegram** (text)
 - **Facebook** (text)
-- **Signal** (**text** and video)
+- **Signal** (text and video)
 - **Skype** (text and video avatars)
 - Amazon Echo  (voice assistants)
 - Snips (open-source voice assistants)
