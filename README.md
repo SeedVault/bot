@@ -61,6 +61,8 @@ The description file is divided into sections to group the parameters:
 
 - **Services**: Here is defined all the external services used by the bot, including main services like voice recognition, to third party services like mapping or weather information.
 
+-- **Connections**: Bot to bot conversation configuration.
+
 - **Logging**: Includes the information about logging method used by the bot.
 
 - **Conversation Flow**: All the conversation logic is contained on this section. For detailed information check the [.FLOW documentation](https://github.com/SeedVault/flow).
@@ -79,7 +81,9 @@ Even when almost all information is provided by the developer, some information 
       "IP": "ip_address",
       "port": "integer",
       "encoding": "string",
-      "seedAddress": "string"
+      "seedAddress": "string",
+      "mode": "string",
+      subscribers: "array"
     },
 ```
 
@@ -128,6 +132,13 @@ With a minimum number of parameters is possible to define a bot into the server:
 ```
 
 Check a more [complete example](docs/bot_example.json) to see the structure of the other sections.
+
+### Enhancements on version 1.1
+On version 1.1 we improved the description adding:
+- Sentiment Analysis server configuration
+- SMTP server information
+- oAuth configuration
+- Extra runtime variables
 
 
 ## Documentation

@@ -136,7 +136,50 @@ Each main service necessary to run the bot is defined into its own section, with
       "effect": "string",
       "level": "string"
     },
+    
 ```
+
+Sentiment analysis is other main service declared on .bot file:
+```
+"sentimentAnalysis": {
+      "provider": "string",
+      "server": {
+        "url": "url",
+        "apiKey": "string",
+        "password": "string",
+        "token": "string",
+      },
+    },
+``` 
+
+The SMTP used on the bot needs to be defined on this section:
+```
+"smtp": {
+      "provider": "string",
+      "email": "string",
+      "return-path": "string",
+      "server": {
+        "host": "address",
+        "port": integer,
+        "username": "string",
+        "password": "string",
+        "method": "string",
+      },
+    },
+```
+
+OAuth basic configuration:
+```
+"oauth": {
+    "server": "url",
+    "name": "string",
+    "key": "string",
+    "secret": "string",
+    "callbackURL": "url",
+    "rejectedCallbackURL": "url",
+    },
+```
+
 
 ### Other services
 
@@ -165,6 +208,22 @@ On the bot definition file it is included the type of logging used by the bot an
     },
 ```
 
+### Bot to Bot conversation configuration
+
+On the bot definition file it is included the type of logging used by the bot and according to the server and channel restrictions.
+
+```
+   "bot2bot": {
+         "bot": {
+           "id": "botID",
+           "url": "url",
+           "port": integer,
+           "username": "string",
+           "paid": boolean,
+           "localname": "string"
+         },
+       },
+```
 
 ### Conversation Flow
 
