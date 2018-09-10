@@ -1,7 +1,20 @@
 # .BOT Description (version 1.1)
 
+## What is .BOT
 The .BOT description is a human-readable open-source model for building a range of conversational AI.
 
+### Introduction
+Part of the SEED token project. This is a sneak preview - there is more to come.
+See [the Wiki](https://github.com/SeedVault/SEEDtoken-IP/wiki) for more information.
+
+### About the SEED Token Project
+SEED democratizes AI by offering an open and independent alternative to the monopolies of a few large corporations that currently control conversational user interfaces (CUIs) and AI technologies. SEED's licensed, monetized open-source platform for bots on blockchain supports collaboration and creative compensation that will exceed the proprietary deployments from industry giants. We are also giving users back control of their personal data. Find out more about the SEED Token project at [seedtoken.io](https://seedtoken.io).
+
+### How to contribute - how to get involved
+Go to our **[Developers Garden](https://developers.seedtoken.io)** to see all featured projects, pick one and fill out the **[Developer Interest Form](https://developers.seedtoken.io/#Developer-Interest-Form)**. If you rather like to discuss ideas before rolling up your sleeves, please come visit our **[Discord channels for developers](https://discord.gg/Suv5bFT)**
+
+
+## .BOT Description
  Like .HTML for the web, .BOT it is a simple model that allows inexperienced developers, content authors, and engineers to build and distribute conversational user interfaces completely platform independent. **Whether they be chatbots, assistants, conversational avatars for VR or AR or even video bots the .BOT format is intended to work with a range of modalities.**
 
 Modalities for a conversation with a bot can be the following:
@@ -148,9 +161,10 @@ On version 1.1 we improved the description adding:
 - [.BOT file example](docs/bot_example.json)
 
 ## Connect
-Feel free to throw general questions regarding SEED and what to expect in the following months here on GitHub (or GitLab) at  @consiliera (gaby@seedtoken.io) :sunny: 
+Feel free to throw general questions regarding SEED and what to expect in the following months here on GitHub at  @consiliera (gaby@seedtoken.io) :sunny: 
 
 **Connect with us elsewhere** 
+- Go to our [Developers Garden](https://developers.seedtoken.io) to see all SEED Community projects and find resources
 - [Follow us on Twitter](https://twitter.com/SEED_token)
 - Always here the latest news first on [Telegram](https://t.me/seedtoken) and [Discord](https://discord.gg/Suv5bFT)
 
