@@ -74,7 +74,7 @@ The description file is divided into sections to group the parameters:
 
 - **Services**: Here is defined all the external services used by the bot, including main services like voice recognition, to third party services like mapping or weather information.
 
--- **Connections**: Bot to bot conversation configuration.
+- **Connections**: Bot to bot conversation configuration.
 
 - **Logging**: Includes the information about logging method used by the bot.
 
